@@ -1,3 +1,3 @@
 # Startup Company Exmaple
 ### Links
-##### Link to notes [notes](notes.md)
+##### Link to [notes](notes.md)
