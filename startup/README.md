@@ -85,6 +85,7 @@ I will completely scrap the old website and create a brand new, improved website
 <img src="SamplePage.jpg" alt="Sketched Design" width="500"/>
 *Sketched Design*
 ---
+
 ## HTML Updates
 ---
 [**Return To Top**](#startup-company-exmaple)
