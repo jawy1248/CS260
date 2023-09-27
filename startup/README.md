@@ -80,6 +80,7 @@ I will completely scrap the old website and create a brand new, improved website
     - Route the login info to the other components
 ### Images
 ![Sketched Design](SamplePage.jpg)
+<img src="SamplePage.jpg" alt="Sketched Design" width="200"/>
 *Sketched Design*
 
 ---
