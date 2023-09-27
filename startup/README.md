@@ -79,8 +79,7 @@ I will completely scrap the old website and create a brand new, improved website
     - Allow to keep my code in components
     - Route the login info to the other components
 ### Images
-![Sketched Design](SamplePage.jpg)
-<img src="SamplePage.jpg" alt="Sketched Design" width="200"/>
+<img src="SamplePage.jpg" alt="Sketched Design" width="500"/>
 *Sketched Design*
 
 ---
