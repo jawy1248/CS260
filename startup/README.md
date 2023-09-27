@@ -1,4 +1,4 @@
-# Startup Company Exmaple
+# Wynn's Flooring and Home Furnishings
 ## Startup Specification
 ### Links
 1. [Elevator Pitch](#elevator-pitch)
