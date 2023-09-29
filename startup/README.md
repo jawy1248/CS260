@@ -92,4 +92,4 @@ For this part of the project, I modified my original design by inlcuding another
 
 ---
 
-[**Return To Top**](#startup-company-exmaple)
+[**Return To Top**](#wynns-flooring-and-home-furnishings)
