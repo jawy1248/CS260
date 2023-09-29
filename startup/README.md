@@ -88,7 +88,14 @@ I will completely scrap the old website and create a brand new, improved website
 ---
 
 ## HTML Updates
-For this part of the project, I modified my original design by inlcuding another webpage (window coverings). Also, becuase there is no CSS in this part of the project, the website looks nothing like my concept design. I added information and picture placeholders on each of the different html webpages, but nothing is really interactable (other than the links). This is just the initial creation of the webpage, but it will soon look much nicer.
+For this part of the project, I modified my original design by inlcuding another webpage (user data). This takes the user to a screen where they can see their saved information if they are logged in. Also, becuase there is no CSS in this part of the project, the website looks nothing like my concept design. I added information and picture placeholders on each of the different html webpages, but nothing is really interactable (other than the links). This is just the initial creation of the webpage, but it will soon look much nicer.\
+\
+I modified the index.html to include all the basic information of the store and employees.\
+I modified the furniture.html to inlcude a short description and photo placeholders of the furniture in store.\
+I modified the lock.html to inlcude a short description and then a price list. Additionally it has a pic placeholder of our locksmithing room.\
+I modified the floor.html to inlcude the specific services we provide and some pic placeholders of the work we have done.\
+I modified the window.html to inlucde a list of the suppliers we use, a short description, and some photo placeholders of our work.\
+Finally, I modified the user.html to inlcude placeholders of the users saved data.\
 
 ---
 
