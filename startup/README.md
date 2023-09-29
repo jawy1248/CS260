@@ -88,6 +88,7 @@ I will completely scrap the old website and create a brand new, improved website
 ---
 
 ## HTML Updates
+For this part of the project, I modified my original design by inlcuding another webpage (window coverings). Also, becuase there is no CSS in this part of the project, the website looks nothing like my concept design. I added information and picture placeholders on each of the different html webpages, but nothing is really interactable (other than the links). This is just the initial creation of the webpage, but it will soon look much nicer.
 
 ---
 
