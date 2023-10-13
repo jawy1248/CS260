@@ -106,31 +106,45 @@
             <hr>
         </main>
         <footer class="container-fluid">
-            <h2>Contact Us</h2>
-            <p>
-                <b>Physical Address</b><br>
-                607 Main St<br>
-                Ashton, ID 83420
-            </p>
-            <p>
-                <b>Mailing Address</b><br>
-                P.O. Box 609<br>
-                Ashton, ID 83420
-            </p>
-            <p>
-                <b>Phones</b><br>
-                <i>Sam</i> - 208-705-3951<br>
-                <i>Ryker</i> - 208-390-7527<br>
-                <i>Taylor</i> - 208-223-6803<br>
-            </p>
-            <p>
-                <b>Email</b><br>
-                <i>Sam</i> - samwynn64@gmail.com<br>
-            </p>
-            <hr>
-            <h2>Google Maps</h2>
-            <img src="images/mapsHolder.png" alt="Interactive Map Widget" width="300" />
-            <p>&copy 2023 Wynn's Flooring and Home Furnishings</p>
+            <div class="d-flex flex-row" id="contact_us">
+                <div class="col m-0 p-0" id="addresses">
+                    <span><h2>Contact Us</h2></span>
+                    <div class="d-flex flex-row justify-content-around">
+                        <div class="col">
+                            <div class="d-flex flex-column mb-3">
+                                <span><b>Physical Address</b></span>
+                                <span>607 Main St</span>
+                                <span>Ashton, ID 83420</span>
+                            </div>
+                            <div class="d-flex flex-column mt-3">
+                                <span><b>Mailing Address</b></span>
+                                <span>P.O. Box 609</span>
+                                <span>Ashton, ID 83420</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex flex-column mb-3">
+                                <span><b>Phones</b></span>
+                                <span><i>Store:</i> <a href="tel:2086523951">208-652-3951</a></span>
+                                <span><i>Sam:</i> <a href="tel:2087053951">208-705-3951</a></span>
+                                <span><i>Stacy:</i> <a href="tel:2083512209">208-351-2209</a></span>
+                                <span><i>Ryker:</i> <a href="tel:2083907527">208-390-7527</a></span>
+                                <span><i>Taylor:</i> <a href="tel:2082236803">208-223-6803</a></span>
+                            </div>
+                            <div class="d-flex flex-column mt-3">
+                                <span><b>Email</b></span>
+                                <span><i>Sam:</i> <a href="mailto: samwynn64@gmail.com">samwynn64@gmail.com</a></span>
+                                <span><i>Taylor:</i> <a href="mailto: taylorwynn14@gmail.com">taylorwynn14@gmail.com</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center" id="googleMaps">
+                    <span><h2>Google Maps</h2></span>
+                    <span><img src="images/mapsHolder.png" alt="Interactive Map Widget" width="300" /></span>
+                </div>
+            </div>
+            <div>&copy 2023 Wynn's Flooring and Home Furnishings</div>
         </footer>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
