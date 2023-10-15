@@ -24,16 +24,74 @@
             </div>
         </header>
         <main>
-            <div>
-                <p>Here are the catalogs, furniture, and flooring samples you have saved:</p>
-                <img src="images/saved1.jpg" alt="Saved 1" width="300" />
-                <img src="images/saved2.jpg" alt="Saved 2" width="300" />
-                <img src="images/saved3.jpg" alt="Saved 3" width="300" />
+            <div class="'d-flex flex-column m-3">
+                <div class="text-center lead">
+                    Here are some of the saved searchs and flooring bids you have saved.
+                </div>
+                <div class="text-center m-3">
+                    <div class="row">
+                        <div class="col"><img src="images/furn/furn1.png" alt="Furniture Set 1" height="300" /></div>
+                        <div class="col"><img src="images/furn/furn2.png" alt="Furniture Set 2" height="300" /></div>
+                        <div class="col"><img src="images/furn/furn3.png" alt="Saved Bid" height="300" /></div>
+                    </div>
+                </div>
             </div>
-            <hr>
         </main>
-        <footer>
-            <p>&copy 2023 Wynn's Flooring and Home Furnishings</p>
+        <footer class="container-fluid border-top border-danger border-4">
+            <div class="d-flex flex-row m-3 mb-0" id="contact_us">
+                <div class="col m-0 p-0" id="addresses">
+                    <span><h2>Contact Us</h2></span>
+                    <div class="d-flex flex-row justify-content-around">
+                        <div class="col">
+                            <div class="d-flex flex-column mb-3">
+                                <span class="text-danger text-decoration-underline"><b>Physical Address</b></span>
+                                <span>607 Main St</span>
+                                <span>Ashton, ID 83420</span>
+                            </div>
+                            <div class="d-flex flex-column mt-3">
+                                <span class="text-danger text-decoration-underline"><b>Mailing Address</b></span>
+                                <span>P.O. Box 609</span>
+                                <span>Ashton, ID 83420</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex flex-column mb-3">
+                                <span class="text-danger text-decoration-underline"><b>Phones</b></span>
+                                <span><i>Store:</i> <a href="tel:2086523951" class="link-danger text-decoration-none">208-652-3951</a></span>
+                                <span><i>Sam:</i> <a href="tel:2087053951" class="link-danger text-decoration-none">208-705-3951</a></span>
+                                <span><i>Ryker:</i> <a href="tel:2083907527" class="link-danger text-decoration-none">208-390-7527</a></span>
+                                <span><i>Taylor:</i> <a href="tel:2082236803" class="link-danger text-decoration-none">208-223-6803</a></span>
+                            </div>
+                            <div class="d-flex flex-column mt-3">
+                                <span class="text-danger text-decoration-underline"><b>Email</b></span>
+                                <span><i>Sam:</i> <a href="mailto: samwynn64@gmail.com" class="link-danger text-decoration-none">samwynn64@gmail.com</a></span>
+                                <span><i>Ryker:</i> <a href="mailto: rykerwynn@gmail.com" class="link-danger text-decoration-none">rykerwynn@gmail.com</a></span>
+                                <span><i>Taylor:</i> <a href="mailto: taylorwynn14@gmail.com" class="link-danger text-decoration-none">taylorwynn14@gmail.com</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center border-start border-end border-danger m-4" id="googleMaps">
+                    <span><h2>Google Maps</h2></span>
+                    <span><img src="images/mapsHolder.png" alt="Interactive Map Widget" height="230" /></span>
+                </div>
+                <div class="text-center btn-group-vertical">
+                    <div class="border border-2 border-dark rounded-5 p-3 text-bg-danger bg-gradient">
+                        <h4>Want a Bid?</h4>
+                        <div class="input-group flex-nowrap m-2">
+                            <span class="input-group-text" id="addon-wrapping">Email</span>
+                            <input type="text" class="form-control me-4" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group flex-nowrap m-2">
+                            <span class="input-group-text" id="addon-wrapping">Password</span>
+                            <input type="text" class="form-control me-4" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                        <button class="btn btn-light">Login</button>
+                        <button class="btn btn-light">Create an account</button>
+                    </div>
+                </div>
+            </div>
+            <div class="m-3 mt-0">&copy 2024 Wynn's Flooring and Home Furnishings</div>
         </footer>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
