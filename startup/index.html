@@ -7,13 +7,13 @@
         <link rel="icon" href="images/favicon.png" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
     </head>
-    <body>
-        <header class="container-fluid sticky-top text-bg-success bg-gradient">
+    <body class="text-bg-dark">
+        <header class="container-fluid sticky-top text-bg-danger bg-gradient">
             <div class="text-center"><h1>Wynn's Flooring and Home Furnishings</h1></div>
             <div>
                 <nav class="nav nav-tabs" role="navigation">
                     <div class="container-fluid d-flex justify-content-around">
-                        <a href="index.html" class="nav-link active text-black">Home</a>
+                        <a href="index.html" class="nav-link active text-bg-dark">Home</a>
                         <a href="furn.html" class="nav-link text-white">Furniture</a>
                         <a href="lock.html" class="nav-link text-white">Locksmith</a>
                         <a href="floor.html" class="nav-link text-white">Floor Coverings</a>
@@ -25,126 +25,123 @@
         </header>
         <main class="container-fluid">
             <div class="m-2 text-center"><a  class="btn btn-outline-danger text-center" role="button" href="https://github.com/jawy1248/CS260/tree/main/startup" target="_blank">Carson's GitHub (For CS 260)</a></div>
-            <hr>
             <div>
-                <div><h2>About Us:</h2></div>
-                <div>
-                    <div class="d-flex flex-column">
-                        <span>We are a family owned business who cares about our customers.</span>
-                        <span>The business was started in 1960 with Ross Wynn (shown below), it was later handed down to his son Sam Wynn in 1990, and is now in the process of being handed down to his son, Ryker Wynn.</span>
-                        <span>We have been in the same location for all the years of our operation.</span>
-                    </div>
+                <div><h2>About Us</h2></div>
+                <div class="d-flex flex-column">
+                    <span class="m-3 text-center">
+                        Wynn's Furniture is a three generation family owned business. Ross and Thayle 
+                        Wynn started the business in 1947 after setting in Ashton, Idaho to raise 
+                        their large family of 11. Ross raised his 6 sons all learning the flooring 
+                        industry. Their youngest son, Sam, spent much of his childhood and teenage 
+                        years working with his brothers on the job sites before formally taking over the
+                        business in his adulthood. A generation later, Sam's oldest son, Ryker, did the same; 
+                        working side by side with his dad and grandpa throughout his youth learning 
+                        the perfected craft. At Wynn's we place emphasis on customly perfected work 
+                        ensuring the highest quality outcome availiable in the luxury flooring industry.
+                    </span>
                     <div class="d-flex justify-content-around">
-                        <img id="gRossPic" src="images/gRossPic.png" alt="Ross Wynn, Founder", width="300" />
-                        <img id="oldStore" src="images/oldStore.png" alt="Wynn's Furniture 1960" width="300" />
-                        <img id="newStore" src="images/newStore.png" alt="Wynn's Furniture 2023" width="300" />
+                        <div class="d-flex flex-column">
+                            <img class="rounded-4 border border-2" id="gRossPic" src="images/gRossPic.jpg" alt="Ross Wynn, Founder", height="300" />
+                            <span class="text-center lead">Ross and Thayle</span>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="rounded-4 border border-2" id="oldStore" src="images/oldStore.jpeg" alt="Wynn's Furniture 1960" height="300" />
+                            <span class="text-center lead">Wynn's, 1968</span>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="rounded-4 border border-2" id="newStore" src="images/newStore.jpg" alt="Wynn's Furniture 2023" height="300" />
+                            <span class="text-center lead">Wynn's, 2024</span>
+                        </div>
                     </div>
                 </div>
             </div>
             <hr>
-            <h2>Employees</h2>
-            <div>
-                <table>
-                    <tr>
-                        <th>Photo</th>
-                        <th>Name</th>
-                        <th>Brief Intro</th>
-                    </tr>
-                    <tr>
-                        <td><img src="images/samPic.png" alt="Sam Wynn" width="150" /></td>
-                        <td>Sam Wynn</td>
-                        <td>Sam info</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/stacyPic.png" alt="Stacy Wynn" width="150" /></td>
-                        <td>Stacy Wynn</td>
-                        <td>Stacy info</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/rykerPic.png" alt="Ryker Wynn" width="150" /></td>
-                        <td>Ryker Wynn</td>
-                        <td>Ryker info</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/taylorPic.png" alt="Taylor Wynn" width="150" /></td>
-                        <td>Taylor Wynn</td>
-                        <td>Taylor info</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/rossPic.png" alt="Ross Wynn" width="150" /></td>
-                        <td>Ross Wynn</td>
-                        <td>Ross info</td>
-                    </tr>
-                </table>
+            <div id="owners">
+                <h2>Owners</h2>
+                <div class="d-flex flex-row" id="ownersChild">
+                    <div class="col" id="samStacy">
+                        <div class="m-3 d-flex flex-column">
+                            <span class="text-center h4">Sam and Stacy</span>
+                            <div class="border border-2 rounded d-flex flex-row">
+                                <img class="rounded-1" id="samStacy" src="images/samStacy.jpg" alt="Sam and Stacy" height="300" />
+                                <span class="text-center btn-group-vertical m-3">
+                                    Sam and Stacy met at Utah State University. They soon later got
+                                    married in 1990 and started their family. Post-graduation, they moved back
+                                    to Ashton to start their new lives. They bought Wynn's Furniture in 1993 have been
+                                    the owners ever since. They have 5 children, each of which they are incredibly proud of.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="rykerTaylor">
+                        <div class="m-3 d-flex flex-column">
+                            <span class="text-center h4">Ryker and Taylor</span>
+                            <div class="border border-2 rounded d-flex flex-row">
+                                <img class="rounded-1" id="samStacy" src="images/rykerTaylor.jpg" alt="Ryker and Taylor" height="300" />
+                                <span class="text-center btn-group-vertical m-3">
+                                    Ryker and Taylor met at Brigham Young University. After getting married 
+                                    in 2014, they started a family and are now up to 3 children. In 2022, they become partners 
+                                    in Wynn's Furniture and plan to completely take over when Sam and Stacy retire.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <hr>
-            <h2>Suppliers</h2>
-            <p>Carpet</p>
-            <ul>
-                <li>Kraus</li>
-                <li>Shaw</li>
-                <li>Mohawk</li>
-                <li>Patriot Mills</li>
-                <li>Godfry Hirst</li>
-                <li>Prestige</li>
-                <li>Wolfshire</li>
-            </ul>
-            <p>Blinds</p>
-            <ul>
-                <li>Blynco</li>
-                <li>Lutron</li>
-            </ul>
-            <hr>
-            <h2>Want a Bid?</h2>
-            <p>Login to request a bid</p>
-            <label>Username: </label>
-            <input type="text" /><br />
-            <label>Password: </label>
-            <input type="password" /><br />
-            <button>Login</button>
-            <button>Create an account</button>
-            <hr>
+            <div class="text-center border border-2 border-dark rounded-5 p-3 text-bg-danger bg-gradient">
+                <h4>Want a Bid?</h4>
+                <div class="input-group flex-nowrap m-2">
+                    <span class="input-group-text" id="addon-wrapping">Email</span>
+                    <input type="text" class="form-control me-4" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+                <div class="input-group flex-nowrap m-2">
+                    <span class="input-group-text" id="addon-wrapping">Password</span>
+                    <input type="text" class="form-control me-4" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+                <button class="btn btn-light">Login</button>
+                <button class="btn btn-light">Create an account</button>
+            </div>
         </main>
         <footer class="container-fluid">
-            <div class="d-flex flex-row" id="contact_us">
+            <div class="d-flex flex-row m-3" id="contact_us">
                 <div class="col m-0 p-0" id="addresses">
                     <span><h2>Contact Us</h2></span>
                     <div class="d-flex flex-row justify-content-around">
                         <div class="col">
                             <div class="d-flex flex-column mb-3">
-                                <span><b>Physical Address</b></span>
+                                <span class="text-danger text-decoration-underline"><b>Physical Address</b></span>
                                 <span>607 Main St</span>
                                 <span>Ashton, ID 83420</span>
                             </div>
                             <div class="d-flex flex-column mt-3">
-                                <span><b>Mailing Address</b></span>
+                                <span class="text-danger text-decoration-underline"><b>Mailing Address</b></span>
                                 <span>P.O. Box 609</span>
                                 <span>Ashton, ID 83420</span>
                             </div>
                         </div>
                         <div class="col">
                             <div class="d-flex flex-column mb-3">
-                                <span><b>Phones</b></span>
-                                <span><i>Store:</i> <a href="tel:2086523951">208-652-3951</a></span>
-                                <span><i>Sam:</i> <a href="tel:2087053951">208-705-3951</a></span>
-                                <span><i>Stacy:</i> <a href="tel:2083512209">208-351-2209</a></span>
-                                <span><i>Ryker:</i> <a href="tel:2083907527">208-390-7527</a></span>
-                                <span><i>Taylor:</i> <a href="tel:2082236803">208-223-6803</a></span>
+                                <span class="text-danger text-decoration-underline"><b>Phones</b></span>
+                                <span><i>Store:</i> <a href="tel:2086523951" class="link-danger text-decoration-none">208-652-3951</a></span>
+                                <span><i>Sam:</i> <a href="tel:2087053951" class="link-danger text-decoration-none">208-705-3951</a></span>
+                                <span><i>Ryker:</i> <a href="tel:2083907527" class="link-danger text-decoration-none">208-390-7527</a></span>
+                                <span><i>Taylor:</i> <a href="tel:2082236803" class="link-danger text-decoration-none">208-223-6803</a></span>
                             </div>
                             <div class="d-flex flex-column mt-3">
-                                <span><b>Email</b></span>
-                                <span><i>Sam:</i> <a href="mailto: samwynn64@gmail.com">samwynn64@gmail.com</a></span>
-                                <span><i>Taylor:</i> <a href="mailto: taylorwynn14@gmail.com">taylorwynn14@gmail.com</a></span>
+                                <span class="text-danger text-decoration-underline"><b>Email</b></span>
+                                <span><i>Sam:</i> <a href="mailto: samwynn64@gmail.com" class="link-danger text-decoration-none">samwynn64@gmail.com</a></span>
+                                <span><i>Ryker:</i> <a href="mailto: rykerwynn@gmail.com" class="link-danger text-decoration-none">rykerwynn@gmail.com</a></span>
+                                <span><i>Taylor:</i> <a href="mailto: taylorwynn14@gmail.com" class="link-danger text-decoration-none">taylorwynn14@gmail.com</a></span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col text-center" id="googleMaps">
+                <div class="col text-center border-start" id="googleMaps">
                     <span><h2>Google Maps</h2></span>
-                    <span><img src="images/mapsHolder.png" alt="Interactive Map Widget" width="300" /></span>
+                    <span><img src="images/mapsHolder.png" alt="Interactive Map Widget" height="230" /></span>
                 </div>
             </div>
-            <div>&copy 2023 Wynn's Flooring and Home Furnishings</div>
+            <div>&copy 2024 Wynn's Flooring and Home Furnishings</div>
         </footer>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
