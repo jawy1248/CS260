@@ -90,12 +90,12 @@ I will completely scrap the old website and create a brand new, improved website
 ## HTML Updates
 For this part of the project, I modified my original design by inlcuding another webpage (user data). This takes the user to a screen where they can see their saved information if they are logged in. Also, becuase there is no CSS in this part of the project, the website looks nothing like my concept design. I added information and picture placeholders on each of the different html webpages, but nothing is really interactable (other than the links). This is just the initial creation of the webpage, but it will soon look much nicer
 
-- [x] I modified the index.html to include all the basic information of the store and employees
-- [x] I modified the furniture.html to inlcude a short description and photo placeholders of the furniture in store
-- [x] I modified the lock.html to inlcude a short description and then a price list. Additionally it has a pic placeholder of our locksmithing room
-- [x] I modified the floor.html to inlcude the specific services we provide and some pic placeholders of the work we have done
-- [x] I modified the window.html to inlucde a list of the suppliers we use, a short description, and some photo placeholders of our work
-- [x] I modified the user.html to inlcude placeholders of the users saved data
+- [x] Modified the index.html to include all the basic information of the store and employees
+- [x] Modified the furniture.html to inlcude a short description and photo placeholders of the furniture in store
+- [x] Modified the lock.html to inlcude a short description and then a price list. Additionally it has a pic placeholder of our locksmithing room
+- [x] Modified the floor.html to inlcude the specific services we provide and some pic placeholders of the work we have done
+- [x] Modified the window.html to inlucde a list of the suppliers we use, a short description, and some photo placeholders of our work
+- [x] Modified the user.html to inlcude placeholders of the users saved data
 
 ## CSS Updates
 For this part of the project, I implemented Bootstrap to design my startup and make it look like an actual website. There are still a few missing photos (I plan on getting by the end of this next week), but other than that, it will look like a fully designed webpage. A lot of the buttons (such as login) will not work still, as there is no JavaScript, but it will all look nice. 
@@ -109,10 +109,10 @@ For this part of the project, I implemented Bootstrap to design my startup and m
 ## JavaScript Updates
 For this part of the project, I deployed the Simon JavaScript to the environment. I still have a link to
 my GitHub on the homepage. In terms of what I added to my project, here is a list:
-- [ ] Added JS to take care of the login on each page of the website and displays the username
+- [x] Added JS to take care of the login on each page of the website and displays the username on the userpage
 - [x] Added JS so that key prices show up when clicked on on the "Locksmith" page
 - [ ] Added JS that takes input (e.g. saved searches) and puts it in an object
-- [ ] Added JS that uses the `localstorage` API to keep the data users save constant throughout sessions
+- [x] Added JS that uses the `localstorage` API to keep the data users save constant throughout sessions. Aka the username of the person
 - [ ] Added JS to mock the websocket of the LiveChat that will be available
 
 ---

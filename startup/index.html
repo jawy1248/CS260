@@ -131,15 +131,15 @@
                     <div class="border border-2 border-dark rounded-5 p-3 text-bg-danger bg-gradient">
                         <h4>Want a Bid?</h4>
                         <div class="input-group flex-nowrap m-2">
-                            <span class="input-group-text" id="addon-wrapping">Email</span>
-                            <input type="text" class="form-control me-4" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
+                            <span class="input-group-text">Username</span>
+                            <input type="text" class="form-control me-4" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" id="username">
                         </div>
                         <div class="input-group flex-nowrap m-2">
-                            <span class="input-group-text" id="addon-wrapping">Password</span>
+                            <span class="input-group-text" id="password">Password</span>
                             <input type="text" class="form-control me-4" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
                         </div>
-                        <button class="btn btn-light">Login</button>
-                        <button class="btn btn-light">Create an account</button>
+                        <button class="btn btn-light" onclick="login()" id="login">Login</button>
+                        <button class="btn btn-light" onclick="register()" id="register">Create an account</button>
                     </div>
                 </div>
             </div>
@@ -150,5 +150,6 @@
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"
         ></script>
+        <script src="login.js"></script>
     </body>
 </html>

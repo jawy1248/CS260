@@ -25,14 +25,10 @@
         </header>
         <main>
             <div class="'d-flex flex-column m-3">
-                <div class="text-center lead">
-                    Here are some of the saved searchs and flooring bids you have saved.
-                </div>
+                <div class="text-center" id="reloadButt"><button onclick="reload()" class="text-bg-danger rounded-3">Reload</button></div>
                 <div class="text-center m-3">
                     <div class="row">
-                        <div class="col"><img src="images/furn/furn1.png" alt="Furniture Set 1" height="300" /></div>
-                        <div class="col"><img src="images/furn/furn2.png" alt="Furniture Set 2" height="300" /></div>
-                        <div class="col"><img src="images/furn/furn3.png" alt="Saved Bid" height="300" /></div>
+
                     </div>
                 </div>
             </div>
@@ -71,24 +67,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col text-center border-start border-end border-danger m-4" id="googleMaps">
+                <div class="col text-center border-start border-danger m-4" id="googleMaps">
                     <span><h2>Google Maps</h2></span>
                     <span><img src="images/mapsHolder.png" alt="Interactive Map Widget" height="230" /></span>
-                </div>
-                <div class="text-center btn-group-vertical">
-                    <div class="border border-2 border-dark rounded-5 p-3 text-bg-danger bg-gradient">
-                        <h4>Want a Bid?</h4>
-                        <div class="input-group flex-nowrap m-2">
-                            <span class="input-group-text" id="addon-wrapping">Email</span>
-                            <input type="text" class="form-control me-4" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
-                        </div>
-                        <div class="input-group flex-nowrap m-2">
-                            <span class="input-group-text" id="addon-wrapping">Password</span>
-                            <input type="text" class="form-control me-4" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
-                        </div>
-                        <button class="btn btn-light">Login</button>
-                        <button class="btn btn-light">Create an account</button>
-                    </div>
                 </div>
             </div>
         </footer>
@@ -98,5 +79,6 @@
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"
         ></script>
+        <script src="login.js"></script>
     </body>
 </html>

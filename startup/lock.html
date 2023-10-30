@@ -31,7 +31,7 @@
                 </div>
                 <div class="row">
                     <div class="col ms-3 text-center">
-                        <button class="rounded-3 p-2 h3 text-bg-dark" onclick="table()">Key Prices</button>
+                        <button class="rounded-3 p-2 h4 text-bg-dark" onclick="table()">Key Prices</button>
                         <div class="text-center" id="output"></div>
                     </div>
                     <div class="col text-center">
@@ -92,8 +92,8 @@
                             <span class="input-group-text" id="addon-wrapping">Password</span>
                             <input type="text" class="form-control me-4" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
                         </div>
-                        <button class="btn btn-light">Login</button>
-                        <button class="btn btn-light">Create an account</button>
+                        <button class="btn btn-light" onclick="login()" id="login">Login</button>
+                        <button class="btn btn-light" onclick="register()" id="register">Create an account</button>
                     </div>
                 </div>
             </div>
@@ -105,5 +105,6 @@
             crossorigin="anonymous"
         ></script>
         <script src="keys.js"></script>
+        <script src="login.js"></script>
     </body>
 </html>
