@@ -112,7 +112,7 @@ my GitHub on the homepage. In terms of what I added to my project, here is a lis
 - [x] Added JS to take care of the login on each page of the website and displays the username on the userpage
 - [x] Added JS so that key prices show up when clicked on on the "Locksmith" page
 - [ ] Added JS that takes input (e.g. saved searches) and puts it in an object
-- [x] Added JS that uses the `localstorage` API to keep the data users save constant throughout sessions. Aka the username of the person
+- [x] Added JS that uses the `localstorage` to keep the data users save constant throughout session (i.e. the username of the person)
 - [ ] Added JS to mock the websocket of the LiveChat that will be available
 
 ---
