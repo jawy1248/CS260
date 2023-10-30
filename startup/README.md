@@ -111,9 +111,8 @@ For this part of the project, I deployed the Simon JavaScript to the environment
 my GitHub on the homepage. In terms of what I added to my project, here is a list:
 - [x] Added JS to take care of the login on each page of the website and displays the username on the userpage
 - [x] Added JS so that key prices show up when clicked on on the "Locksmith" page
-- [ ] Added JS that takes input (e.g. saved searches) and puts it in an object
-- [x] Added JS that uses the `localstorage` to keep the data users save constant throughout session (i.e. the username of the person)
-- [ ] Added JS to mock the websocket of the LiveChat that will be available
+- [x] Added JS that uses the `localStorage` to keep the data users save constant throughout session (i.e. the username of the person)
+- [x] Added JS to mock the websocket of the LiveChat that will be available on the userpage
 
 ---
 
