@@ -3,6 +3,7 @@
 - [Startup Specification](#startup-specification)
 - [HTML Updates](#html-updates)
 - [CSS Updates](#css-updates)
+- [JavaScript Updates](#javascript-updates)
 ## Startup Specification
 ### Links
 1. [Elevator Pitch](#elevator-pitch)
@@ -104,6 +105,15 @@ For this part of the project, I implemented Bootstrap to design my startup and m
 - Added a few links for the phone numbers and emails
 - Added a lot of flex and grid items to make the webpage act dynamically as the browser window changes
 - Added styling to the images, which will be actually seen when I get the photos
+
+## JavaScript Updates
+For this part of the project, I deployed the Simon JavaScript to the environment. I still have a link to
+my GitHub on the homepage. In terms of what I added to my project, here is a list:
+- Added JavaScript to take care of the login on each page of the website and displays the username
+- Added JavaScript so that key prices show up when clicked on on the "Locksmith" page
+- Added JavaScript that takes input (e.g. saved searches) and puts it in an object
+- I use the `localstorage` API to keep the data users save constant throughout sessions
+- Added JavaScript to mock the websocket of the LiveChat that will be available
 
 ---
 
