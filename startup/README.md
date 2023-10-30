@@ -90,21 +90,21 @@ I will completely scrap the old website and create a brand new, improved website
 ## HTML Updates
 For this part of the project, I modified my original design by inlcuding another webpage (user data). This takes the user to a screen where they can see their saved information if they are logged in. Also, becuase there is no CSS in this part of the project, the website looks nothing like my concept design. I added information and picture placeholders on each of the different html webpages, but nothing is really interactable (other than the links). This is just the initial creation of the webpage, but it will soon look much nicer
 
-- I modified the index.html to include all the basic information of the store and employees
-- I modified the furniture.html to inlcude a short description and photo placeholders of the furniture in store
-- I modified the lock.html to inlcude a short description and then a price list. Additionally it has a pic placeholder of our locksmithing room
-- I modified the floor.html to inlcude the specific services we provide and some pic placeholders of the work we have done
-- I modified the window.html to inlucde a list of the suppliers we use, a short description, and some photo placeholders of our work
-- I modified the user.html to inlcude placeholders of the users saved data
+- [x] I modified the index.html to include all the basic information of the store and employees
+- [x] I modified the furniture.html to inlcude a short description and photo placeholders of the furniture in store
+- [x] I modified the lock.html to inlcude a short description and then a price list. Additionally it has a pic placeholder of our locksmithing room
+- [x] I modified the floor.html to inlcude the specific services we provide and some pic placeholders of the work we have done
+- [x] I modified the window.html to inlucde a list of the suppliers we use, a short description, and some photo placeholders of our work
+- [x] I modified the user.html to inlcude placeholders of the users saved data
 
 ## CSS Updates
 For this part of the project, I implemented Bootstrap to design my startup and make it look like an actual website. There are still a few missing photos (I plan on getting by the end of this next week), but other than that, it will look like a fully designed webpage. A lot of the buttons (such as login) will not work still, as there is no JavaScript, but it will all look nice. 
-- Deployed the Simon CSS Project as well as Startup
-- Added design to each of the subpages
-- Added a navbar for the links
-- Added a few links for the phone numbers and emails
-- Added a lot of flex and grid items to make the webpage act dynamically as the browser window changes
-- Added styling to the images, which will be actually seen when I get the photos
+- [x] Deployed the Simon CSS Project as well as Startup
+- [x] Added design to each of the subpages
+- [x] Added a navbar for the links
+- [x] Added a few links for the phone numbers and emails
+- [x] Added a lot of flex and grid items to make the webpage act dynamically as the browser window changes
+- [x] Added styling to the images, which will be actually seen when I get the photos
 
 ## JavaScript Updates
 For this part of the project, I deployed the Simon JavaScript to the environment. I still have a link to
