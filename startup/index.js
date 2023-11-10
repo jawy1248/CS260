@@ -13,3 +13,15 @@ app.use(express.static('public'));
 // Router for service endpoints
 var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
+
+// MY MIDDLE WARE HERE
+
+
+// Return the application's default page if the path is unknown
+app.use((_req, res) => {
+    res.sendFile('index.html', { root: 'public' });
+  });
+  
+  app.listen(port, () => {
+    console.log(`Listening on port ${port}`);
+  });
