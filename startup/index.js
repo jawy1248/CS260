@@ -14,7 +14,7 @@ app.use(express.static('public'));
 var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
-// MY MIDDLE WARE HERE
+// My functions and middle points here
 
 
 // Return the application's default page if the path is unknown
