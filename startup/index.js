@@ -16,12 +16,23 @@ app.use(`/api`, apiRouter);
 
 // -------------- My apis --------------
 // Save Search
+// print out to make sure we are in
+apiRouter.post('/saved', (req, _res, next) => {
+    console.log("The url requested is '" + req.originalUrl + "' and the method is " + req.method);
+    next();
+});
 apiRouter.post('/saved', (req, res) => {
     searches = updateSaves(req.body, searches);
     res.send(searches);
 });
 
 // Get Searches
+// print out to make sure we are in
+apiRouter.get('/saved', (req, _res, next) => {
+    console.log("The url requested is '" + req.originalUrl + "' and the method is " + req.method);
+    next();
+});
+// actually return searches
 apiRouter.get('/saved', (_req, res) => {
     res.send(searches);
 });
