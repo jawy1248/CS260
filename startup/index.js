@@ -14,14 +14,41 @@ app.use(express.static('public'));
 var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
-// My middleware
+// -------------- My apis --------------
+// Save Search
+apiRouter.post('/saved', (req, res) => {
+    searches = updateSaves(req.body, searches);
+    res.send(searches);
+});
 
+// Get Searches
+apiRouter.get('/saved', (_req, res) => {
+    res.send(searches);
+});
 
 // Return the application's default page if the path is unknown
 app.use((_req, res) => {
     res.sendFile('index.html', { root: 'public' });
-  });
+});
   
-  app.listen(port, () => {
+app.listen(port, () => {
     console.log(`Listening on port ${port}`);
-  });
+});
+
+let searches = [];
+function updateSaves(newSearch, searches) {
+    let found = false;
+    for (const [i, prevSeach] of searches.entries()) {
+        if (newSearch.search === prevSeach.search) {
+            found = true;
+            break;
+        }
+    }
+
+    if(!found){
+        searches.push(newSearch);
+    }
+
+    return searches;
+}
+  
