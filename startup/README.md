@@ -4,6 +4,7 @@
 - [HTML Updates](#html-updates)
 - [CSS Updates](#css-updates)
 - [JavaScript Updates](#javascript-updates)
+- [Webservice Updates](#webservice-updates)
 ## Startup Specification
 ### Links
 1. [Elevator Pitch](#elevator-pitch)
