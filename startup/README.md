@@ -107,12 +107,23 @@ For this part of the project, I implemented Bootstrap to design my startup and m
 - [x] Added styling to the images, which will be actually seen when I get the photos
 
 ## JavaScript Updates
-For this part of the project, I deployed the Simon JavaScript to the environment. I still have a link to
-my GitHub on the homepage. In terms of what I added to my project, here is a list:
+For this part of the project, I deployed the Simon JavaScript to the environment. I still have a link to my GitHub on the homepage. In terms of what I added to my project, here is a list:
 - [x] Added JS to take care of the login on each page of the website and displays the username on the userpage
 - [x] Added JS so that key prices show up when clicked on on the "Locksmith" page
 - [x] Added JS that uses the `localStorage` to keep the data users save constant throughout session (i.e. the username of the person)
 - [x] Added JS to mock the websocket of the LiveChat that will be available on the userpage
+
+## Webservice Updates
+For this part of the project, I added a Webservice to my environment. Things I added:
+- [x] Created a service using Node and Express
+- [x] I use middleware to error handle and catch bugs in my code. I do this in the 
+`index.js` file. I also use middleware to set my root folder as pubclic
+- [x] I call a thirdparty service in my front end by displaying an inspirational quote on
+my home page `index.html`
+- [x] My backend provides service points were I use get and post to save and retrieve 
+furniture sets made by the user. This can be seen in `user.js` and `furn.js`
+- [x] My frontend calls these service points in `user.js` to display results. `furn.js` also uses these service points to make sure the correct "Saved!" buttons appear when saved
+- [x] Multiple git commits can be seen from my GitHub (link in `index.html`)
 
 ---
 
