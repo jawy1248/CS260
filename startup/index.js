@@ -1,3 +1,9 @@
+// Require Mango
+const { MongoClient } = require('mongodb');
+const url = `mongodb+srv://cs260:cs260password@cluster0.cocupz0.mongodb.net/`;
+const client = new MongoClient(url);
+
+// Require Express
 const express = require('express');
 const app = express();
 
