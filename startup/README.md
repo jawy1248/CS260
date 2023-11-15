@@ -5,6 +5,7 @@
 - [CSS Updates](#css-updates)
 - [JavaScript Updates](#javascript-updates)
 - [Webservice Updates](#webservice-updates)
+- [Database Updates](#database-updates)
 ## Startup Specification
 ### Links
 1. [Elevator Pitch](#elevator-pitch)
@@ -125,6 +126,13 @@ my home page `index.html`
 furniture sets made by the user. This can be seen in `user.js` and `furn.js`
 - [x] My frontend calls these service points in `user.js` to display results. `furn.js` also uses these service points to make sure the correct "Saved!" buttons appear when saved
 - [x] Multiple git commits can be seen from my GitHub (link in `index.html`)
+
+## Database Updates
+For this part of the project I did the following
+- [x] Deployed the simon database to the production environment
+- [x] Created a MongoDB Atalas database which is used to save searches
+- [x] Created endpoints in `index.js` and `database.js` that add, query, and remove values
+- [x] Stores the actual searches in the database
 
 ---
 
