@@ -3,7 +3,7 @@ function save(searchNEW) {
 
   clickedSave(searchNEW);
 
-  if(isSaved(searchNEW) === false){
+  if(isSaved(searchNEW)){
     try {
       const response = fetch('/api/saved', {
         method: 'POST',
@@ -42,15 +42,21 @@ async function savedValues(){
 function clickedSave(num){
   let IDs = ["save1", "save2", "save3", "save4", "save5", "save6"];
   let el = document.getElementById(IDs[num-1]);
-  let contents = el.innerHTML;
-  contents = (isSaved(num) ? "Save" : "Unsave");
+  let elClass = el.classList;
+  if(isSaved(num)){
+    el.innerHTML = "Save";
+    elClass.replace("btn-danger", "btn-light");
+  } else {
+    el.innerHTML = "Unsave";
+    elClass.replace("btn-light", "btn-danger");
+  }
 }
 
 function isSaved(num){
   const IDs = ["save1", "save2", "save3", "save4", "save5", "save6"];
   const el = document.getElementById(IDs[num-1]);
-  const contents = el.innerHTML;
-  return ((contents === "Save") ? false : true);
+  const elContents = el.innerHTML;
+  return ((elContents === "Save") ? false : true);
 }
 
 savedValues();
