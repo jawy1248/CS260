@@ -44,11 +44,11 @@ apiRouter.get('/saved', async (_req, res) => {
 // -------------- Delete Saved Search --------------
 // print out to make sure we are in
 apiRouter.delete('/saved', (_req, _res, next) => {
-    console.log("Requested to find");
+    console.log("Requested to delete");
     next();
 });
 // actually delete search
-apiRouter.delete('/saved', async (_req, res) => {
+apiRouter.delete('/saved', async (req, res) => {
     const searches = await DB.removeSave(req.body);
     res.send(searches);
 });

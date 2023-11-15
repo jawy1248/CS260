@@ -25,7 +25,7 @@ async function addSave(saveJSON){
 function getSaved(){
     const query = {};
     const options = {
-      sort: { search: -1 }
+      sort: { search: 1 }
     };
     const cursor = collection.find(query, options);
     return cursor.toArray();
@@ -35,7 +35,7 @@ function getSaved(){
 async function removeSave(searchJSON){
     const num = searchJSON.search;
     const query = {search: num};
-    const result = await collection.remove(query);
+    const result = await collection.deleteMany(query);
     return result;
 }
 
