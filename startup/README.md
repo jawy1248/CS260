@@ -132,7 +132,8 @@ For this part of the project I did the following
 - [x] Deployed the simon database to the production environment
 - [x] Created a MongoDB Atalas database which is used to save searches
 - [x] Created endpoints in `index.js` and `database.js` that add, query, and remove values
-- [x] Stores the actual searches in the database
+- [x] Added a feature to "Unsave" searches to `furn.html` and `furn.js`
+- [x] Stores the actual searches in the database to be saved later
 
 ---
 
