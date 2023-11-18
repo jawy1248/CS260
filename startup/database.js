@@ -1,10 +1,14 @@
-// Require Mango
+const bcrypt = require('bcrypt');
+const uuid = require('uuid');
+
+// Connect to Mongo
 const { MongoClient } = require('mongodb');
 const config = require("./dbConfig.json")
 const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}/`;
 const client = new MongoClient(url);
 const db = client.db("startup");
-const collection = db.collection("savedResults");
+const saveCollection = db.collection("savedResults");
+const userCollection = db.collection('user');
 
 // Test connection
 (async function testConnection() {
@@ -17,7 +21,7 @@ const collection = db.collection("savedResults");
 
 // Add saved search
 async function addSave(saveJSON){
-    const result = await collection.insertOne(saveJSON);
+    const result = await saveCollection.insertOne(saveJSON);
     return result;
 }
 
@@ -27,7 +31,7 @@ function getSaved(){
     const options = {
       sort: { search: 1 }
     };
-    const cursor = collection.find(query, options);
+    const cursor = saveCollection.find(query, options);
     return cursor.toArray();
 }
 
@@ -35,8 +39,38 @@ function getSaved(){
 async function removeSave(searchJSON){
     const num = searchJSON.search;
     const query = {search: num};
-    const result = await collection.deleteMany(query);
+    const result = await saveCollection.deleteMany(query);
     return result;
 }
 
-module.exports = { addSave, getSaved, removeSave }
+// LOGIN SERVICES
+function getUser(email) {
+    return userCollection.findOne({ email: email });
+}
+
+function getUserByToken(token) {
+    return userCollection.findOne({ token: token });
+}
+
+async function createUser(email, password) {
+  // Hash the password before we insert it into the database
+  const passwordHash = await bcrypt.hash(password, 10);
+
+  const user = {
+    email: email,
+    password: passwordHash,
+    token: uuid.v4(),
+  };
+  await userCollection.insertOne(user);
+
+  return user;
+}
+
+module.exports = {
+    getUser,
+    getUserByToken,
+    createUser,
+    addSave,
+    getSaved,
+    removeSave
+}
