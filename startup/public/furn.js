@@ -1,5 +1,6 @@
 function save(searchNEW) {
-  const newSearch = {search: searchNEW};
+  let userName = localStorage.getItem('userName');
+  let newSearch = {email: userName, search: searchNEW};
 
   clickedSave(searchNEW);
 
@@ -27,8 +28,15 @@ function save(searchNEW) {
 }
 
 async function savedValues(){
+  let userName = localStorage.getItem('userName');
+  let newSearch = {email: userName};
+
   try {
-    const response = await fetch('/api/saved');
+    const response = await fetch('/api/saved', {
+      headers: {'content-type': 'application/json'},
+      body: JSON.stringify(newSearch), 
+    });
+    
     searches = await response.json();
 
     for (const [i, searchItem] of searches.entries()) {

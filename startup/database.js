@@ -26,8 +26,8 @@ async function addSave(saveJSON){
 }
 
 // Get saved searches
-function getSaved(){
-    const query = {};
+function getSaved(userName){
+    const query = { email: `${userName}` };
     const options = {
       sort: { search: 1 }
     };
@@ -38,7 +38,9 @@ function getSaved(){
 // Remove all searches with corresponding number
 async function removeSave(searchJSON){
     const num = searchJSON.search;
-    const query = {search: num};
+    const userName = searchJSON.email;
+
+    const query = {email:userName, search: num};
     const result = await saveCollection.deleteMany(query);
     return result;
 }

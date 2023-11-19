@@ -29,7 +29,45 @@ var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
 // ---------------------------- My apis ----------------------------
-// CreateAuth token for a new user
+
+// -------------- Save Search --------------
+// print out to make sure we are in
+apiRouter.post('/saved', (_req, _res, next) => {
+    console.log("Requested to save");
+    next();
+});
+// actually save search
+apiRouter.post('/saved', async (req, res) => {
+    searches = await DB.addSave(req.body);
+    res.send(searches);
+});
+
+// -------------- Get Searches --------------
+// print out to make sure we are in
+apiRouter.get('/saved', (req, _res, next) => {
+    console.log("Requested to find");
+    console.log(req.body);
+    next();
+});
+// actually return searches
+apiRouter.get('/saved', async (req, res) => {
+    const searches = await DB.getSaved(req.body.email);
+    res.send(searches);
+});
+
+// -------------- Delete Saved Search --------------
+// print out to make sure we are in
+apiRouter.delete('/saved', (_req, _res, next) => {
+    console.log("Requested to delete");
+    next();
+});
+// actually delete search
+apiRouter.delete('/saved', async (req, res) => {
+    const searches = await DB.removeSave(req.body);
+    res.send(searches);
+});
+
+// -------------- CreateAuth token for a new user --------------
 apiRouter.post('/auth/create', async (req, res) => {
     if (await DB.getUser(req.body.email)) {
         res.status(409).send({ msg: 'Existing user' });
@@ -47,7 +85,7 @@ apiRouter.post('/auth/create', async (req, res) => {
     }
 });
 
-// GetAuth token for the provided credentials
+// -------------- GetAuth token for the provided credentials --------------
 apiRouter.post('/auth/login', async (req, res) => {
     const user = await DB.getUser(req.body.email);
     if (user) {
@@ -62,13 +100,13 @@ apiRouter.post('/auth/login', async (req, res) => {
     console.log("Unable to login");
 });
 
-// DeleteAuth token if stored in cookie
+// -------------- DeleteAuth token if stored in cookie --------------
 apiRouter.delete('/auth/logout', (_req, res) => {
     res.clearCookie(authCookieName);
     res.status(204).end();
 });
 
-// GetUser returns information about a user
+// -------------- GetUser returns information about a user --------------
 apiRouter.get('/user/:email', async (req, res) => {
     const user = await DB.getUser(req.params.email);
     if (user) {
@@ -79,7 +117,7 @@ apiRouter.get('/user/:email', async (req, res) => {
     res.status(404).send({ msg: 'Unknown' });
 });
 
-// secureApiRouter verifies credentials for endpoints
+// -------------- secureApiRouter verifies credentials for endpoints --------------
 var secureApiRouter = express.Router();
 apiRouter.use(secureApiRouter);
 
@@ -91,42 +129,6 @@ const user = await DB.getUserByToken(authToken);
     } else {
         res.status(401).send({ msg: 'Unauthorized' });
     }
-});
-
-// -------------- Save Search --------------
-// print out to make sure we are in
-apiRouter.post('/saved', (_req, _res, next) => {
-    console.log("Requested to save");
-    next();
-});
-// actually save search
-apiRouter.post('/saved', async (req, res) => {
-    searches = await DB.addSave(req.body);
-    res.send(searches);
-});
-
-// -------------- Get Searches --------------
-// print out to make sure we are in
-apiRouter.get('/saved', (_req, _res, next) => {
-    console.log("Requested to find");
-    next();
-});
-// actually return searches
-apiRouter.get('/saved', async (_req, res) => {
-    const searches = await DB.getSaved();
-    res.send(searches);
-});
-
-// -------------- Delete Saved Search --------------
-// print out to make sure we are in
-apiRouter.delete('/saved', (_req, _res, next) => {
-    console.log("Requested to delete");
-    next();
-});
-// actually delete search
-apiRouter.delete('/saved', async (req, res) => {
-    const searches = await DB.removeSave(req.body);
-    res.send(searches);
 });
 
 // -----------------------------------------------------------------
