@@ -55,6 +55,7 @@ async function loadSearches() {
     }
 
     newHTML = "";
+    const userName = localStorage.getItem('userName');
     for (const [i, searchItem] of searches.entries()) {
         if(searchItem.email === userName){
             newHTML += picHTML[searchItem.search-1];
