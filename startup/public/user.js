@@ -66,7 +66,7 @@ function displaySearches(HTML){
     let usernameText = localStorage.getItem('userName');
     const reloadID = document.getElementById("reloadName");
     const reloadID2 = document.getElementById("reloadData");
-    reloadID.innerHTML = "Welcome <lead><b>" + usernameText + "</b></lead>, here are your saved searches";
+    reloadID.innerHTML = `Welcome <lead><b>${usernameText}</b></lead>, here are your saved searches\n<button type="button" class="btn btn-danger" onclick="logout()">Logout</button>`;
     reloadID2.innerHTML = HTML;
 }
 

@@ -73,6 +73,7 @@ async function loginOrCreate(endpoint) {
 
     if (response.ok) {
         localStorage.setItem('userName', userName);
+        window.location.reload();
     } else {
         const body = await response.json();
         const modalEl = document.querySelector('#msgModal');
@@ -84,10 +85,10 @@ async function loginOrCreate(endpoint) {
   
 function logout() {
     localStorage.removeItem('userName');
-    displayLogin();
+    // displayLogin();
     fetch(`/api/auth/logout`, {
         method: 'delete',
-    }).then(() => (window.location.href = '/'));
+    }).then(() => (window.location.reload()));
 }
 
 async function getUser(userName) {
