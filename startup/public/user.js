@@ -56,7 +56,9 @@ async function loadSearches() {
 
     newHTML = "";
     for (const [i, searchItem] of searches.entries()) {
-        newHTML += picHTML[searchItem.search-1];
+        if(searchItem.email === userName){
+            newHTML += picHTML[searchItem.search-1];
+        }
     }
 
     displaySearches(newHTML);

@@ -85,7 +85,6 @@ async function loginOrCreate(endpoint) {
   
 function logout() {
     localStorage.removeItem('userName');
-    // displayLogin();
     fetch(`/api/auth/logout`, {
         method: 'delete',
     }).then(() => (window.location.reload()));
