@@ -27,7 +27,7 @@ async function addSave(saveJSON){
 
 // Get saved searches
 function getSaved(userName){
-    const query = { email: `${userName}` };
+    query = {};
     const options = {
       sort: { search: 1 }
     };

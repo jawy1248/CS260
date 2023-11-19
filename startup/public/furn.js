@@ -29,18 +29,16 @@ function save(searchNEW) {
 
 async function savedValues(){
   let userName = localStorage.getItem('userName');
-  let newSearch = {email: userName};
 
   try {
-    const response = await fetch('/api/saved', {
-      headers: {'content-type': 'application/json'},
-      body: JSON.stringify(newSearch), 
-    });
-    
+    const response = await fetch('/api/saved');
+
     searches = await response.json();
 
     for (const [i, searchItem] of searches.entries()) {
-      clickedSave(searchItem.search);
+      if(searchItem.email === userName){
+        clickedSave(searchItem.search);
+      }
     }
   } catch {
       console.log("Error getting searches");

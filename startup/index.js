@@ -46,7 +46,6 @@ apiRouter.post('/saved', async (req, res) => {
 // print out to make sure we are in
 apiRouter.get('/saved', (req, _res, next) => {
     console.log("Requested to find");
-    console.log(req.body);
     next();
 });
 // actually return searches
