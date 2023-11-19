@@ -1,3 +1,12 @@
+(async () => {
+    const userName = localStorage.getItem('userName');
+    if (userName) {
+        displayLogout(userName);
+    } else {
+        displayLogin();
+    }
+})();
+
 function displayLogin(){
     let reloadID = document.getElementById("LoginBox");
     let newHTML = 
@@ -24,7 +33,7 @@ function displayLogout(userName){
     let newHTML = 
     `
         <div class="border border-2 border-dark rounded-5 p-3 text-bg-danger bg-gradient">
-            <h4>Welcome ${userName}</h4>
+            <h4>Welcome <em><b>${userName}</b></em></h4>
             <div class="input-group flex-nowrap m-2">
                 <span>Click below to view saved searches or logout</span>
             </div>

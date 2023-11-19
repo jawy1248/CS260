@@ -83,18 +83,19 @@
                     <span><h2>Google Maps</h2></span>
                     <span><img src="images/mapsHolder.png" alt="Interactive Map Widget" height="230" /></span>
                 </div>
-                <div class="text-center btn-group-vertical">
+                <div class="text-center btn-group-vertical" id="LoginBox">
                     <div class="border border-2 border-dark rounded-5 p-3 text-bg-danger bg-gradient">
-                        <h4>Want a Bid?</h4>
+                        <h4>Login or Create an Account</h4>
                         <div class="input-group flex-nowrap m-2">
                             <span class="input-group-text">Username</span>
-                            <input type="text" class="form-control me-4" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" id="username">
+                            <input type="text" class="form-control me-4" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" id="userName">
                         </div>
                         <div class="input-group flex-nowrap m-2">
-                            <span class="input-group-text" id="password">Password</span>
-                            <input type="text" class="form-control me-4" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+                            <span class="input-group-text">Password</span>
+                            <input type="password" class="form-control me-4" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping" id="userPassword">
                         </div>
-                        <button class="btn btn-light" onclick="login()" id="login">Login</button>
+                        <button type="button" class="btn btn-light" onclick="loginUser()">Login</button>
+                        <button type="button" class="btn btn-light" onclick="createUser()">Create</button>
                     </div>
                 </div>
             </div>

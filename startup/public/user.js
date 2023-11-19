@@ -1,3 +1,12 @@
+(async () => {
+    const userName = localStorage.getItem('userName');
+    if (userName) {
+        loadSearches();
+    } else {
+        displayPleaseLogin();
+    }
+})();
+
 async function loadSearches() {
 
     let pic1HTML =  
@@ -54,11 +63,33 @@ async function loadSearches() {
 }
 
 function displaySearches(HTML){
-    let usernameText = localStorage.getItem('username');
+    let usernameText = localStorage.getItem('userName');
     const reloadID = document.getElementById("reloadName");
     const reloadID2 = document.getElementById("reloadData");
     reloadID.innerHTML = "Welcome <lead><b>" + usernameText + "</b></lead>, here are your saved searches";
     reloadID2.innerHTML = HTML;
 }
 
-loadSearches();
+function displayPleaseLogin(){
+    let HTML = 
+    `
+        <div class="border border-2 border-dark rounded-5 p-3 text-bg-danger bg-gradient">
+            <h4>Login or Create an Account</h4>
+            <div class="input-group flex-nowrap m-2">
+                <span class="input-group-text">Username</span>
+                <input type="text" class="form-control me-4" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" id="userName">
+            </div>
+            <div class="input-group flex-nowrap m-2">
+                <span class="input-group-text" id="password">Password</span>
+                <input type="password" class="form-control me-4" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping" id="userPassword">
+            </div>
+            <button type="button" class="btn btn-light" onclick="loginUser()">Login</button>
+            <button type="button" class="btn btn-light" onclick="createUser()">Create</button>
+        </div>
+    `;
+
+    const reloadID = document.getElementById("reloadName");
+    const reloadID2 = document.getElementById("reloadData");
+    reloadID.innerHTML = "Welcome, please login to see your saved searches";
+    reloadID2.innerHTML = HTML;
+}
