@@ -6,6 +6,7 @@
 - [JavaScript Updates](#javascript-updates)
 - [Webservice Updates](#webservice-updates)
 - [Database Updates](#database-updates)
+- [Login Updates](#login-updates)
 ## Startup Specification
 ### Links
 1. [Elevator Pitch](#elevator-pitch)
@@ -134,6 +135,12 @@ For this part of the project I did the following
 - [x] Created endpoints in `index.js` and `database.js` that add, query, and remove values
 - [x] Added a feature to "Unsave" searches to `furn.html` and `furn.js`
 - [x] Stores the actual searches in the database to be saved later
+
+## Login Updates
+- [x] Allows for new users to be added on every page
+- [x] Authenticates existing users and if password is wrong, it rejects the login
+- [x] Has a userDB to store user data and authentication
+- [x] Restricts saved searches depending on who is logged in
 
 ---
 
