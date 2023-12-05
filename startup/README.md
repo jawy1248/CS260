@@ -7,6 +7,7 @@
 - [Webservice Updates](#webservice-updates)
 - [Database Updates](#database-updates)
 - [Login Updates](#login-updates)
+- [WebSocket Updates](#websocket-updates)
 ## Startup Specification
 ### Links
 1. [Elevator Pitch](#elevator-pitch)
@@ -141,6 +142,13 @@ For this part of the project I did the following
 - [x] Authenticates existing users and if password is wrong, it rejects the login
 - [x] Has a userDB to store user data and authentication
 - [x] Restricts saved searches depending on who is logged in
+
+## WebSocket Updates
+For this part of the project, I added a websocket that allows all users in the chat at the same time to text each other. All of the code for this is in `chat.js` with small additions in `index.js` for setup
+- [x] The backend listens for a websocket chat from any other device on the chat at the same time
+- [x] Frontend is able to create and hold a connection
+- [x] Data (chats) are sent through the websocket and displayed on both devices
+- [x] Simon is upload and there are multiple Git Commits
 
 ---
 
