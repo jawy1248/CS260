@@ -1,12 +1,12 @@
 "use strict";
 
 const Keys = [
-  { Service: "Copy", Type: "House Key", Price: "$2"},
-  { Service: "Copy", Type: "Specialty Key", Price: "$10"},
-  { Service: "Create", Type:"House Key", Price: "$20"},
-  { Service: "Create", Type: "Specialty Key", Price: "$40"},
-  { Service: "Lockout", Type:"Car", Price: "Situaltional"},
-  { Service: "Lockout", Type:"House", Price: "Situaltional"},
+  { Service: "Copy", Type: "House Key", Price: "$2" },
+  { Service: "Copy", Type: "Specialty Key", Price: "$10" },
+  { Service: "Create", Type: "House Key", Price: "$20" },
+  { Service: "Create", Type: "Specialty Key", Price: "$40" },
+  { Service: "Lockout", Type: "Car", Price: "Situaltional" },
+  { Service: "Lockout", Type: "House", Price: "Situaltional" },
 ];
 
 let currentData = Keys;

@@ -1,57 +1,59 @@
-const bcrypt = require('bcrypt');
-const uuid = require('uuid');
+const bcrypt = require("bcrypt");
+const uuid = require("uuid");
 
 // Connect to Mongo
-const { MongoClient } = require('mongodb');
-const config = require("./dbConfig.json")
+const { MongoClient } = require("mongodb");
+const config = require("./dbConfig.json");
 const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}/`;
 const client = new MongoClient(url);
 const db = client.db("startup");
 const saveCollection = db.collection("savedResults");
-const userCollection = db.collection('user');
+const userCollection = db.collection("user");
 
 // Test connection
 (async function testConnection() {
-    await client.connect();
-    await db.command({ ping: 1 });
+  await client.connect();
+  await db.command({ ping: 1 });
 })().catch((ex) => {
-    console.log(`Unable to connect to database with ${url} because ${ex.message}`);
-    process.exit(1);
+  console.log(
+    `Unable to connect to database with ${url} because ${ex.message}`
+  );
+  process.exit(1);
 });
 
 // Add saved search
-async function addSave(saveJSON){
-    const result = await saveCollection.insertOne(saveJSON);
-    return result;
+async function addSave(saveJSON) {
+  const result = await saveCollection.insertOne(saveJSON);
+  return result;
 }
 
 // Get saved searches
-function getSaved(userName){
-    query = {};
-    const options = {
-      sort: { search: 1 }
-    };
-    const cursor = saveCollection.find(query, options);
-    return cursor.toArray();
+function getSaved(userName) {
+  query = {};
+  const options = {
+    sort: { search: 1 },
+  };
+  const cursor = saveCollection.find(query, options);
+  return cursor.toArray();
 }
 
 // Remove all searches with corresponding number
-async function removeSave(searchJSON){
-    const num = searchJSON.search;
-    const userName = searchJSON.email;
+async function removeSave(searchJSON) {
+  const num = searchJSON.search;
+  const userName = searchJSON.email;
 
-    const query = {email:userName, search: num};
-    const result = await saveCollection.deleteMany(query);
-    return result;
+  const query = { email: userName, search: num };
+  const result = await saveCollection.deleteMany(query);
+  return result;
 }
 
 // LOGIN SERVICES
 function getUser(email) {
-    return userCollection.findOne({ email: email });
+  return userCollection.findOne({ email: email });
 }
 
 function getUserByToken(token) {
-    return userCollection.findOne({ token: token });
+  return userCollection.findOne({ token: token });
 }
 
 async function createUser(email, password) {
@@ -69,10 +71,10 @@ async function createUser(email, password) {
 }
 
 module.exports = {
-    getUser,
-    getUserByToken,
-    createUser,
-    addSave,
-    getSaved,
-    removeSave
-}
+  getUser,
+  getUserByToken,
+  createUser,
+  addSave,
+  getSaved,
+  removeSave,
+};
