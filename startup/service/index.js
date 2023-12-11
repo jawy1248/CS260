@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 const DB = require('./database.js');
-const { peerProxy } = require('./peerProxy.js');
+const { peerProxy } = require('../peerProxy.js');
 
 const cookieParser = require('cookie-parser');
 const authCookieName = 'token';
