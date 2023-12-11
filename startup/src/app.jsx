@@ -8,7 +8,15 @@ import { User } from "./user/user";
 import { Window } from "./window/window";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+function NotFound() {
+  return (
+    <main className="container-fluid bg-secondary text-center">
+      404: Return to sender. Address unknown.
+    </main>
+  );
+}
+
+export default function App() {
   return (
     <BrowserRouter>
       <body>
@@ -223,13 +231,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-function NotFound() {
-  return (
-    <main className="container-fluid bg-secondary text-center">
-      404: Return to sender. Address unknown.
-    </main>
-  );
-}
-
-export default App;
