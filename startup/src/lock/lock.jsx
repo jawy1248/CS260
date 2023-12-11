@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Login() {
+export function Lock() {
   return (
     <body className="text-bg-dark">
       <header className="container-fluid sticky-top text-bg-danger bg-gradient">
@@ -33,25 +33,27 @@ export function Login() {
         </div>
       </header>
       <main>
-        <div className="d-flex flex-row row-3 m-3">
-          <div className="w-25">
-            <h3>Services</h3>
-            <ul>
-              <li>Carpet</li>
-              <li>Tile</li>
-              <li>Hardwood</li>
-              <li>Laminent</li>
-              <li>Vinyl</li>
-            </ul>
+        <div className="d-flex flex-column m-3">
+          <div className="text-center mb-3 lead">
+            We offer a vast variety of locksmithing services ranging from car
+            and home lockouts, making and copying keys, and opening locks and
+            safes.
           </div>
-          <div className="d-flex flex-column text-center">
-            <span className="lead mb-2">
-              Here are some examples of our work!
-            </span>
-            <div className="d-flex flex-row justify-content-around gap-3">
-              <img src="images/flooring1.jpg" alt="Flooring 1" height="300" />
-              <img src="images/flooring2.jpg" alt="Flooring 2" height="300" />
-              <img src="images/flooring3.jpg" alt="Flooring 3" height="300" />
+          <div className="row">
+            <div className="col ms-3 text-center">
+              <button
+                className="rounded-3 p-2 h4 text-bg-dark"
+                onclick="table()"
+              >
+                Key Prices
+              </button>
+              <div className="text-center" id="output"></div>
+            </div>
+            <div className="col text-center">
+              <img src="images/keys.png" alt="Locksmith Keys" width="300" />
+            </div>
+            <div className="col text-center">
+              <img src="images/keys2.png" alt="Locksmith Keys 2" width="300" />
             </div>
           </div>
         </div>
@@ -85,7 +87,7 @@ export function Login() {
                     <b>Phones</b>
                   </span>
                   <span>
-                    <i>Store:</i>{" "}
+                    <i>Store:</i>
                     <a
                       href="tel:2086523951"
                       className="link-danger text-decoration-none"
@@ -94,7 +96,7 @@ export function Login() {
                     </a>
                   </span>
                   <span>
-                    <i>Sam:</i>{" "}
+                    <i>Sam:</i>
                     <a
                       href="tel:2087053951"
                       className="link-danger text-decoration-none"
@@ -103,7 +105,7 @@ export function Login() {
                     </a>
                   </span>
                   <span>
-                    <i>Ryker:</i>{" "}
+                    <i>Ryker:</i>
                     <a
                       href="tel:2083907527"
                       className="link-danger text-decoration-none"
@@ -112,7 +114,7 @@ export function Login() {
                     </a>
                   </span>
                   <span>
-                    <i>Taylor:</i>{" "}
+                    <i>Taylor:</i>
                     <a
                       href="tel:2082236803"
                       className="link-danger text-decoration-none"
@@ -126,7 +128,7 @@ export function Login() {
                     <b>Email</b>
                   </span>
                   <span>
-                    <i>Sam:</i>{" "}
+                    <i>Sam:</i>
                     <a
                       href="mailto: samwynn64@gmail.com"
                       className="link-danger text-decoration-none"
@@ -135,7 +137,7 @@ export function Login() {
                     </a>
                   </span>
                   <span>
-                    <i>Ryker:</i>{" "}
+                    <i>Ryker:</i>
                     <a
                       href="mailto: rykerwynn@gmail.com"
                       className="link-danger text-decoration-none"
@@ -144,7 +146,7 @@ export function Login() {
                     </a>
                   </span>
                   <span>
-                    <i>Taylor:</i>{" "}
+                    <i>Taylor:</i>
                     <a
                       href="mailto: taylorwynn14@gmail.com"
                       className="link-danger text-decoration-none"
@@ -222,6 +224,7 @@ export function Login() {
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"
       ></script>
+      <script src="keys.js"></script>
       <script src="login.js"></script>
     </body>
   );

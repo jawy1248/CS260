@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Login() {
+export function User() {
   return (
     <body className="text-bg-dark">
       <header className="container-fluid sticky-top text-bg-danger bg-gradient">
@@ -33,27 +33,20 @@ export function Login() {
         </div>
       </header>
       <main>
-        <div className="d-flex flex-row row-3 m-3">
-          <div className="w-25">
-            <h3>Services</h3>
-            <ul>
-              <li>Carpet</li>
-              <li>Tile</li>
-              <li>Hardwood</li>
-              <li>Laminent</li>
-              <li>Vinyl</li>
-            </ul>
+        <div className="'d-flex flex-column m-3" id="DisplayLogin">
+          <div className="text-center m-3" id="reloadName"></div>
+          <div className="text-center m-3 row" id="reloadData"></div>
+        </div>
+        <hr />
+        <div className="m-2">
+          <div className="h2 m-2">Chat</div>
+          <div className="m-2" id="chat">
+            <button onclick="chat()" className="text-bg-danger rounded-3">
+              Chat
+            </button>
           </div>
-          <div className="d-flex flex-column text-center">
-            <span className="lead mb-2">
-              Here are some examples of our work!
-            </span>
-            <div className="d-flex flex-row justify-content-around gap-3">
-              <img src="images/flooring1.jpg" alt="Flooring 1" height="300" />
-              <img src="images/flooring2.jpg" alt="Flooring 2" height="300" />
-              <img src="images/flooring3.jpg" alt="Flooring 3" height="300" />
-            </div>
-          </div>
+          <div className="m-2" id="chatBack"></div>
+          <div className="m-2" id="reply"></div>
         </div>
       </main>
       <footer className="container-fluid border-top border-danger border-4">
@@ -85,7 +78,7 @@ export function Login() {
                     <b>Phones</b>
                   </span>
                   <span>
-                    <i>Store:</i>{" "}
+                    <i>Store:</i>
                     <a
                       href="tel:2086523951"
                       className="link-danger text-decoration-none"
@@ -94,7 +87,7 @@ export function Login() {
                     </a>
                   </span>
                   <span>
-                    <i>Sam:</i>{" "}
+                    <i>Sam:</i>
                     <a
                       href="tel:2087053951"
                       className="link-danger text-decoration-none"
@@ -103,7 +96,7 @@ export function Login() {
                     </a>
                   </span>
                   <span>
-                    <i>Ryker:</i>{" "}
+                    <i>Ryker:</i>
                     <a
                       href="tel:2083907527"
                       className="link-danger text-decoration-none"
@@ -112,7 +105,7 @@ export function Login() {
                     </a>
                   </span>
                   <span>
-                    <i>Taylor:</i>{" "}
+                    <i>Taylor:</i>
                     <a
                       href="tel:2082236803"
                       className="link-danger text-decoration-none"
@@ -126,7 +119,7 @@ export function Login() {
                     <b>Email</b>
                   </span>
                   <span>
-                    <i>Sam:</i>{" "}
+                    <i>Sam:</i>
                     <a
                       href="mailto: samwynn64@gmail.com"
                       className="link-danger text-decoration-none"
@@ -135,7 +128,7 @@ export function Login() {
                     </a>
                   </span>
                   <span>
-                    <i>Ryker:</i>{" "}
+                    <i>Ryker:</i>
                     <a
                       href="mailto: rykerwynn@gmail.com"
                       className="link-danger text-decoration-none"
@@ -144,7 +137,7 @@ export function Login() {
                     </a>
                   </span>
                   <span>
-                    <i>Taylor:</i>{" "}
+                    <i>Taylor:</i>
                     <a
                       href="mailto: taylorwynn14@gmail.com"
                       className="link-danger text-decoration-none"
@@ -157,7 +150,7 @@ export function Login() {
             </div>
           </div>
           <div
-            className="col text-center border-start border-end border-danger m-4"
+            className="col text-center border-start border-danger m-4"
             id="googleMaps"
           >
             <span>
@@ -171,47 +164,6 @@ export function Login() {
               />
             </span>
           </div>
-          <div className="text-center btn-group-vertical" id="LoginBox">
-            <div className="border border-2 border-dark rounded-5 p-3 text-bg-danger bg-gradient">
-              <h4>Login or Create an Account</h4>
-              <div className="input-group flex-nowrap m-2">
-                <span className="input-group-text">Username</span>
-                <input
-                  type="text"
-                  className="form-control me-4"
-                  placeholder="Username"
-                  aria-label="Username"
-                  aria-describedby="addon-wrapping"
-                  id="userName"
-                />
-              </div>
-              <div className="input-group flex-nowrap m-2">
-                <span className="input-group-text">Password</span>
-                <input
-                  type="password"
-                  className="form-control me-4"
-                  placeholder="Password"
-                  aria-label="Password"
-                  aria-describedby="addon-wrapping"
-                  id="userPassword"
-                />
-              </div>
-              <button
-                type="button"
-                className="btn btn-light"
-                onclick="loginUser()"
-              >
-                Login
-              </button>
-              <button
-                type="button"
-                className="btn btn-light"
-                onclick="createUser()"
-              >
-                Create
-              </button>
-            </div>
-          </div>
         </div>
       </footer>
       <div className="m-3 mt-0 text-bg-dark sticky-bottom">
@@ -223,6 +175,7 @@ export function Login() {
         crossorigin="anonymous"
       ></script>
       <script src="login.js"></script>
+      <script src="user.js"></script>
     </body>
   );
 }

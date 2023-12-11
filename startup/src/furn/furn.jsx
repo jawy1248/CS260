@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Login() {
+export function Floor() {
   return (
     <body className="text-bg-dark">
       <header className="container-fluid sticky-top text-bg-danger bg-gradient">
@@ -33,25 +33,123 @@ export function Login() {
         </div>
       </header>
       <main>
-        <div className="d-flex flex-row row-3 m-3">
-          <div className="w-25">
-            <h3>Services</h3>
-            <ul>
-              <li>Carpet</li>
-              <li>Tile</li>
-              <li>Hardwood</li>
-              <li>Laminent</li>
-              <li>Vinyl</li>
-            </ul>
+        <div className="'d-flex flex-column m-3">
+          <div className="text-center lead">
+            We offer high quality furniture from multiple suppliers. Come in
+            store to see the products in more detail!
           </div>
-          <div className="d-flex flex-column text-center">
-            <span className="lead mb-2">
-              Here are some examples of our work!
-            </span>
-            <div className="d-flex flex-row justify-content-around gap-3">
-              <img src="images/flooring1.jpg" alt="Flooring 1" height="300" />
-              <img src="images/flooring2.jpg" alt="Flooring 2" height="300" />
-              <img src="images/flooring3.jpg" alt="Flooring 3" height="300" />
+          <div className="text-center m-3">
+            <div className="d-grid">
+              <div className="row">
+                <div className="col d-flex flex-column m-3">
+                  <span className="h5">Furniture Set 1</span>
+                  <div className="text-center">
+                    <img
+                      className="m-1 rounded-3"
+                      src="images/furn/furn1.jpeg"
+                      alt="Furniture Set 1"
+                      width="300"
+                    />
+                  </div>
+                  <button
+                    className="btn btn-light"
+                    onclick="save(1)"
+                    id="save1"
+                  >
+                    Save
+                  </button>
+                </div>
+                <div className="col d-flex flex-column m-3">
+                  <span className="h5">Furniture Set 2</span>
+                  <div className="text-center">
+                    <img
+                      className="m-1 rounded-3"
+                      src="images/furn/furn2.jpg"
+                      alt="Furniture Set 2"
+                      width="300"
+                    />
+                  </div>
+                  <button
+                    className="btn btn-light"
+                    onclick="save(2)"
+                    id="save2"
+                  >
+                    Save
+                  </button>
+                </div>
+                <div className="col d-flex flex-column m-3">
+                  <span className="h5">Furniture Set 3</span>
+                  <div className="text-center">
+                    <img
+                      className="m-1 rounded-3"
+                      src="images/furn/furn3.jpg"
+                      alt="Furniture Set 3"
+                      width="300"
+                    />
+                  </div>
+                  <button
+                    className="btn btn-light"
+                    onclick="save(3)"
+                    id="save3"
+                  >
+                    Save
+                  </button>
+                </div>
+                <div className="col d-flex flex-column m-3">
+                  <span className="h5">Furniture Set 4</span>
+                  <div className="text-center">
+                    <img
+                      className="m-1 rounded-3"
+                      src="images/furn/furn4.jpg"
+                      alt="Furniture Set 4"
+                      width="300"
+                    />
+                  </div>
+                  <button
+                    className="btn btn-light"
+                    onclick="save(4)"
+                    id="save4"
+                  >
+                    Save
+                  </button>
+                </div>
+                <div className="col d-flex flex-column m-3">
+                  <span className="h5">Furniture Set 5</span>
+                  <div className="text-center">
+                    <img
+                      className="m-1 rounded-3"
+                      src="images/furn/furn5.jpg"
+                      alt="Furniture Set 5"
+                      width="300"
+                    />
+                  </div>
+                  <button
+                    className="btn btn-light"
+                    onclick="save(5)"
+                    id="save5"
+                  >
+                    Save
+                  </button>
+                </div>
+                <div className="col d-flex flex-column m-3">
+                  <span className="h5">Furniture Set 6</span>
+                  <div className="text-center">
+                    <img
+                      className="m-1 rounded-3"
+                      src="images/furn/furn6.jpg"
+                      alt="Furniture Set 6"
+                      width="300"
+                    />
+                  </div>
+                  <button
+                    className="btn btn-light"
+                    onclick="save(6)"
+                    id="save6"
+                  >
+                    Save
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -85,7 +183,7 @@ export function Login() {
                     <b>Phones</b>
                   </span>
                   <span>
-                    <i>Store:</i>{" "}
+                    <i>Store:</i>
                     <a
                       href="tel:2086523951"
                       className="link-danger text-decoration-none"
@@ -94,7 +192,7 @@ export function Login() {
                     </a>
                   </span>
                   <span>
-                    <i>Sam:</i>{" "}
+                    <i>Sam:</i>
                     <a
                       href="tel:2087053951"
                       className="link-danger text-decoration-none"
@@ -103,7 +201,7 @@ export function Login() {
                     </a>
                   </span>
                   <span>
-                    <i>Ryker:</i>{" "}
+                    <i>Ryker:</i>
                     <a
                       href="tel:2083907527"
                       className="link-danger text-decoration-none"
@@ -112,7 +210,7 @@ export function Login() {
                     </a>
                   </span>
                   <span>
-                    <i>Taylor:</i>{" "}
+                    <i>Taylor:</i>
                     <a
                       href="tel:2082236803"
                       className="link-danger text-decoration-none"
@@ -126,7 +224,7 @@ export function Login() {
                     <b>Email</b>
                   </span>
                   <span>
-                    <i>Sam:</i>{" "}
+                    <i>Sam:</i>
                     <a
                       href="mailto: samwynn64@gmail.com"
                       className="link-danger text-decoration-none"
@@ -135,7 +233,7 @@ export function Login() {
                     </a>
                   </span>
                   <span>
-                    <i>Ryker:</i>{" "}
+                    <i>Ryker:</i>
                     <a
                       href="mailto: rykerwynn@gmail.com"
                       className="link-danger text-decoration-none"
@@ -144,7 +242,7 @@ export function Login() {
                     </a>
                   </span>
                   <span>
-                    <i>Taylor:</i>{" "}
+                    <i>Taylor:</i>
                     <a
                       href="mailto: taylorwynn14@gmail.com"
                       className="link-danger text-decoration-none"
@@ -223,6 +321,7 @@ export function Login() {
         crossorigin="anonymous"
       ></script>
       <script src="login.js"></script>
+      <script src="furn.js"></script>
     </body>
   );
 }
