@@ -1,13 +1,13 @@
-import { defindConfig } from 'vite';
+import { defineConfig } from 'vite';
 
-export default defindConfig({
-    server: {
-        proxy: {
-            '/api': 'http://localhost:4000',
-            '/ws': {
-                target: 'ws://localhost:4000',
-                ws: true,
-            },
-        },
+export default defineConfig({
+  server: {
+    proxy: {
+      '/api': 'http://localhost:3000',
+      '/ws': {
+        target: 'ws://localhost:3000',
+        ws: true,
+      },
     },
+  },
 });
