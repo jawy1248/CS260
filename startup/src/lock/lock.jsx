@@ -10,7 +10,7 @@ export function Lock() {
         <div>
           <nav className="nav nav-tabs" role="navigation">
             <div className="container-fluid d-flex justify-content-around">
-              <NavLink to="app" className="nav-link active text-bg-dark">
+              <NavLink to="start" className="nav-link active text-bg-dark">
                 Home
               </NavLink>
               <NavLink to="furn" className="nav-link text-white">
