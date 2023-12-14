@@ -8,6 +8,7 @@
 - [Database Updates](#database-updates)
 - [Login Updates](#login-updates)
 - [WebSocket Updates](#websocket-updates)
+- [React Updates](#react-updates)
 ## Startup Specification
 ### Links
 1. [Elevator Pitch](#elevator-pitch)
@@ -149,6 +150,14 @@ For this part of the project, I added a websocket that allows all users in the c
 - [x] Frontend is able to create and hold a connection
 - [x] Data (chats) are sent through the websocket and displayed on both devices
 - [x] Simon is upload and there are multiple Git Commits
+
+## React Updates
+For this part of the project, I honestly could not even get my `npm run dev` to work...so I did not deploy it to my production. I fully expect to take a huge hit for this...But I did try to create the React application, so I am hoping for some points.
+- [x] I added react routers (although I think this is where my error is so idk if I did it right)
+- [x] Each of the webpages are now as react components. Each page is now .jsx files
+- [ ] No react hooks
+- [ ] Honestly idek if it bundled with WebPack and Babel
+My code can be seen in my github repository, however it is NOT in my production environment
 
 ---
 
