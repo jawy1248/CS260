@@ -8,12 +8,18 @@ import { User } from './user/user';
 import { Window } from './window/window';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
+function NotFound() {
+  return (
+    <main className='container-fluid bg-secondary text-center'>
+      404: Return to sender. Address unknown.
+    </main>
+  );
+}
 
+function App() {
   return (
     <BrowserRouter>
-      <body>
+      <div>
         <header className='container-fluid sticky-top text-bg-danger bg-gradient'>
           <div className='text-center'>
             <h1>Wynn's Flooring and Home Furnishings</h1>
@@ -130,8 +136,8 @@ function App() {
                   <span className='input-group-text'>Password</span>
                   <input type='password' className='form-control me-4' placeholder='Password' aria-label='Password' aria-describedby='addon-wrapping' id='userPassword' />
                 </div>
-                <button type='button' className='btn btn-light' onclick='loginUser()'>Login</button>
-                <button type='button' className='btn btn-light' onclick='createUser()'>Create</button>
+                <button type='button' className='btn btn-light' onClick={loginUser}>Login</button>
+                <button type='button' className='btn btn-light' onClick={createUser}>Create</button>
               </div>
             </div>
           </div>
@@ -145,16 +151,8 @@ function App() {
           crossorigin='anonymous'
         ></script>
         <script src='/login.js'></script>
-      </body>
+      </div>
     </BrowserRouter>
-  );
-}
-
-function NotFound() {
-  return (
-    <main className='container-fluid bg-secondary text-center'>
-      404: Return to sender. Address unknown.
-    </main>
   );
 }
 

@@ -11,7 +11,7 @@ export function User() {
       <div className="m-2">
         <div className="h2 m-2">Chat</div>
         <div className="m-2" id="chat">
-          <button onclick="chat()" className="text-bg-danger rounded-3">
+          <button onClick={chat} className="text-bg-danger rounded-3">
             Chat
           </button>
         </div>
