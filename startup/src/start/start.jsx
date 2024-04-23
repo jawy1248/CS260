@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Start() {
+export function Start() {
   return (
     <main className="container-fluid">
       <div className="m-2 text-center">
